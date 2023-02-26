@@ -1,11 +1,11 @@
 
 ## Dataset process
 
-you can download MSR_data_cleaned.csv and Joern by running `get_data.sh`
+You can download MSR_data_cleaned.csv and Joern by running `get_data.sh`
 
 ### Step 1: Clean Code 
 
-run `scripts/process_dataset.py` to clean dataset and remove abnormal functions, which also get the glove, word2vec and other models that will be used to initialize node embedding by the graph model
+Run `scripts/process_dataset.py` to clean dataset and remove abnormal functions, which also get the glove, word2vec and other models that will be used to initialize node embedding by the graph model
 
 ### Step 2: Graph Extraction: Generate CPGs with the help of joern
 
