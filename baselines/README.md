@@ -13,7 +13,7 @@ Run `scripts/processJoern.py` to extract .c file and run Joern to get correspond
 
 ### Step 3: Image Generation
 
-Run `scripts/getImages.py` to check data after Joern and resample the data to produce [the final balanced dataset](https://drive.google.com/file/d/1biGbJ4t3zxdYLw9-o_mPph8t_xVbW4RA/view?usp=sharing), and then generate images(i.e.,CPG)
+Run `scripts/getImages.py` to check data after Joern and resample the data to produce [the final balanced dataset](https://drive.google.com/file/d/16tm5TU9CUCePFg6wJh2kz71SZylKv8zw/view), and then generate images(i.e.,CPG)
 
 ## Baselines 
 
