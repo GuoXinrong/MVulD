@@ -60,8 +60,6 @@ CUDA_VISIBLE_DEVICES=1 python -m torch.distributed.launch --nproc_per_node 1 --m
 
 ```
 
-For convenience, we share a simple swinV2 model [here]() trained by using our studied dataset.
-
 ## Train UniXcoder model: 
 
 We train UniXcoder model to obtain the semantic information of the source code, please refer to `baselines/README.md`.
@@ -77,6 +75,7 @@ To obtain the positional feature embedding, we use OCR techniques to detect text
 To train and test MMVD model, using the following commands. 
 
 ```shell
+cd mmvd
 
 # train
 CUDA_VISIBLE_DEVICES=1 python -m torch.distributed.launch --nproc_per_node 1 --master_port 10055 main_bigvul.py --cfg configs/mySwin/swinv2_base_patch4_window24to28_384to448_1ktoMYDATA_ft.yaml --batch-size 4
