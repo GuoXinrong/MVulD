@@ -6,7 +6,7 @@ In this paper, we propose MMVD, a multi-modal based vulnerability detection appr
 
 # Design of MMVD
 
-![arc](imgs/mmvd.jpg)
+![arc](fig/mmvd.jpg)
 <p align="center"> An overview architecture of MMVD </p> 
 
 MMVD consists of four four main phases:
@@ -41,7 +41,7 @@ Activate the environment
 We provide dataset processing scripts (including Graph Extraction and Image generation), please refer to `baselines/README.md` 
 
 
-## Train a SwinV2 model
+## Train SwinV2 model
 
 The global image features were extracted by the `SwinV2 model`. For more details, please refer to our paper. Here we train the `swinV2 model`.
 
