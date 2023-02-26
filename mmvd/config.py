@@ -37,12 +37,10 @@ _C.DATA.NUM_WORKERS = 8 #
 _C.MODEL = CN()
 # 是否使用cuda
 
-# Model type ：yaml文件应该可以覆盖
+# Model type 
 _C.MODEL.TYPE = 'swin2'
 # Model name
 _C.MODEL.NAME = 'swin_base_patch4_window7_224' 
-# _C.MODEL.NAME = 'swinv2_base_patch4_window24_384to448_22kto1ktoMYDATA_ft' # 修改了
-
 # Pretrained weight from checkpoint, could be imagenet22k pretrained weight
 # could be overwritten by command line argument
 _C.MODEL.PRETRAINED = ''                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
@@ -194,7 +192,7 @@ _C.TRAIN.MOE = CN()
 # Only save model on master device
 _C.TRAIN.MOE.SAVE_MASTER = False
 # -----------------------------------------------------------------------------
-# Augmentation settings :用于transformer的
+# Augmentation settings
 # -----------------------------------------------------------------------------
 _C.AUG = CN()
 # Color jitter factor
@@ -307,7 +305,6 @@ _C.MULTI_OUTPUT='myoutput/Multi_DefectModel_new_GCN/3' # best modle:MMVD
 
 ## rq4
 # _C.MULTI_OUTPUT='myoutput/Multi_DefectModel_new_GCN/3' # rq1 best-f1 model(change testing set)
-
 
 # Tag of experiment, overwritten by command line argument
 _C.TAG = 'default' 
