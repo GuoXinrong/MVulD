@@ -270,8 +270,6 @@ def main():
 
         eval_examples, eval_data = load_and_cache_defect_data(args, args.dev_filename, pool, tokenizer,
                                                               'valid', is_sample=False)
-        print(f"训练集的长度是:{len(train_data)}") # 6510
-        print(f"验证集的长度是:{len(eval_data)}") # 9246/407
         if args.local_rank == -1:
             train_sampler = RandomSampler(train_data)
         else:
@@ -416,7 +414,7 @@ def main():
             else:
                 eval_examples, eval_data = load_and_cache_defect_data(args, args.test_filename, pool, tokenizer, 'test',
                                                                       False)
-                print(f"test集的长度为{len(eval_data)}")
+              
             result = evaluate(args, model, eval_examples, eval_data, write_to_pred=True)
             logger.info("  test_f1=%.4f", result['eval_f1'])
             logger.info("  " + "*" * 20)
