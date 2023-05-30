@@ -6,7 +6,7 @@ In this paper, we propose MMVD, a multi-modal based vulnerability detection appr
 
 # Design of MMVD
 
-![arc](fig/mmvd.jpg)
+![arc](mmvd.jpg)
 <p align="center"> An overview architecture of MMVD </p> 
 
 MMVD consists of four four main phases:
